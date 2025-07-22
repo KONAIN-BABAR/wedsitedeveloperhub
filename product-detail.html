@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alibaba Style Marketplace</title>
+  <link rel="stylesheet" href="detail-style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <img src="C:\Users\shah\Downloads\logo-colored.png" alt="Logo" class="logo">
+
+    <div class="search-bar">
+      <select class="category-select">
+        <option>All category</option>
+        <option>Electronics</option>
+        <option>Clothing</option>
+        <option>Accessories</option>
+      </select>
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+
+    <div class="header-icons">
+      <a href="#"><span class="material-icons">person</span> Profile</a>
+      <a href="#"><span class="material-icons">chat</span> Message</a>
+      <a href="#"><span class="material-icons">assignment</span> Orders</a>
+      <a href="cart.html"><span class="material-icons">shopping_cart</span> My cart</a>
+    </div>
+  </header>
+
+  <!-- Top Navigation Strip -->
+  <div class="top-nav">
+    <a href="product-detail.html">All Category</a>
+    <a href="offers.html">Hot offers</a>
+    <a href="giftboxes.html">Gift boxes</a>
+    <a href="projects.html">Projects</a>
+    <a href="menu.html">Menu item</a>
+    <a href="help.html">Help</a>
+
+    <div class="right-options">
+      <a href="language.html">English, USD</a>
+      <a href="shipping.html">Ship to</a>
+    </div>
+  </div>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>&gt;</span>
+    <a href="#">Clothings</a>
+    <span>&gt;</span>
+    <a href="#">Men’s wear</a>
+    <span>&gt;</span>
+    <a href="#">Summer clothing</a>
+    <span>&gt;</span>
+  </div>
+
+  <div class="main-container">
+    <div class="main-wrapper">
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+      <div class="filter-section">
+        <h3>Categories</h3>
+        <ul>
+          <li>Mobile accessory</li>
+          <li> Electronics</li>
+          <li>Smartphones </li>
+          <li> Modern tech</li>
+         <a href="product-grid.html" class="view-details">See All</a>
+        </ul>
+      </div>
+      <div class="filter-section">
+        <h3>Brands</h3>
+        <ul>
+          <li><input type="checkbox" class="brand" value="Samsung" /> Samsung</li>
+          <li><input type="checkbox" class="brand" value="Apple" /> Apple</li>
+          <li><input type="checkbox" class="brand" value="Huawei" /> Huawei</li>
+          <li><input type="checkbox" class="brand" value="Pocco" /> Pocco</li>
+          <li><input type="checkbox" class="brand" value="Lenovo" /> Lenovo</li>
+           <a href="product-grid.html" class="view-details">See All</a>
+        </ul>
+      </div>
+      <div class="filter-section">
+        <h3>Features</h3>
+        <ul>
+          <li><input type="checkbox" class="feature" value="Metallic" /> Metallic</li>
+          <li><input type="checkbox" class="feature" value="Plastic cover" /> Plastic cover</li>
+          <li><input type="checkbox" class="feature" value="8 GB RAM" /> 8 GB RAM</li>
+          <li><input type="checkbox" class="feature" value="Super power" /> Super power</li>
+          <li><input type="checkbox" class="feature" value="Large memory" /> Large memory</li>
+           <a href="product-grid.html" class="view-details">See All</a>
+        </ul>
+      </div>
+      <div class="price-filter">
+        <h4>Price Range</h4>
+        <div class="slider-container">
+          <input type="range" min="0" max="1000" value="100" class="slider" id="minRange">
+          <input type="range" min="0" max="1000" value="900" class="slider" id="maxRange">
+          <div class="slider-track"></div>
+        </div>
+        <div class="price-inputs">
+          <input type="number" id="minPrice" value="100">
+          <span>-</span>
+          <input type="number" id="maxPrice" value="900">
+        </div>
+        <button id="Apply">Apply</button>
+      </div>
+        <script src="script.js"></script>
+      <div class="filter-section">
+        <h3>Condition</h3>
+        <ul>
+          <li><input type="checkbox" class="condition" value="Any" /> Any</li>
+          <li><input type="checkbox" class="condition" value="Refurbished" /> Refurbished</li>
+          <li><input type="checkbox" class="condition" value="Brand new" /> Brand new</li>
+          <li><input type="checkbox" class="condition" value="Old items" /> Old items</li>
+        </ul>
+      </div>
+      <div class="filter-section">
+        <h3>Rating</h3>
+        <ul>
+          <li><input type="checkbox" class="rating" value="5" /> ⭐⭐⭐⭐⭐</li>
+          <li><input type="checkbox" class="rating" value="4" /> ⭐⭐⭐⭐☆</li>
+          <li><input type="checkbox" class="rating" value="3" /> ⭐⭐⭐☆☆</li>
+          <li><input type="checkbox" class="rating" value="2" /> ⭐⭐☆☆☆</li>
+          <li><input type="checkbox" class="rating" value="1" /> ⭐☆☆☆☆</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Right Content Start -->
+       <div class="right-content">
+      <div class="top-filter-wrapper">
+        <div class="top-filter-bar">
+          <span class="items-count">12,911 items in <span class="category-name">Mobile accessory</span></span>
+          <input type="checkbox" /> Verified
+          <button class="filter-btn">Featured</button>
+        </div>
+      </div>
+     
+      <div class="product-list">
+ 
+  <div class="product-card">
+    <img src="C:\Users\shah\Videos\1.png" alt="Canon Camera">
+     <span class="favorite-icon">♡</span>
+    <div class="product-info">
+    <h2>Canon Camera EOS 2000, Black 10x zoom</h2>
+    <p class="price">$998.00 <span class="old-price">$1128.00</span></p>
+    <p class="rating">⭐ 7.5 | 154 orders</p>
+    <p class="shipping">Free Shipping</p>
+    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="product-list.html" class="view-details">view details</a>
+  </div>
+</div>
+  
+  <div class="product-card">
+    <img src="C:\Users\shah\Downloads\3.png" alt="GoPro Camera">
+    <div class="product-info">
+    <h2>GoPro HERO6 4K Action Camera - Black</h2>
+    <p class="price">$998.00 <span class="old-price">$1128.00</span></p>
+    <p class="rating">⭐ 7.5 | 154 orders</p>
+    <p class="shipping">Free Shipping</p>
+    <p class="desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   <a href="product-list.html" class="view-details">view details</a>
+  </div>
+</div>
+
+  <div class="product-card">
+    <img src="C:\Users\shah\Downloads\2.png" alt="GoPro Camera">
+    <div class="product-info">
+    <h2>GoPro HERO6 4K Action Camera - Black</h2>
+    <p class="price">$998.00 <span class="old-price">$1128.00</span></p>
+    <p class="rating">⭐ 7.5 | 154 orders</p>
+    <p class="shipping">Free Shipping</p>
+    <p class="desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     <a href="product-list.html" class="view-details">view details</a>
+  </div>
+ </div>
+
+  <div class="product-card">
+    <img src="C:\Users\shah\OneDrive\Documents\7.png" alt="GoPro Camera">
+    <div class="product-info">
+    <h2>GoPro HERO6 4K Action Camera - Black</h2>
+    <p class="price">$998.00 <span class="old-price">$1128.00</span></p>
+    <p class="rating">⭐ 7.5 | 154 orders</p>
+    <p class="shipping">Free Shipping</p>
+    <p class="desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <a href="product-list.html" class="view-details">view details</a>
+  </div>
+ </div>
+
+  <div class="product-card">
+    <img src="C:\Users\shah\OneDrive\Documents\8.png" alt="GoPro Camera">
+    <div class="product-info">
+    <h2>GoPro HERO6 4K Action Camera - Black</h2>
+    <p class="price">$998.00 <span class="old-price">$1128.00</span></p>
+    <p class="rating">⭐ 7.5 | 154 orders</p>
+    <p class="shipping">Free Shipping</p>
+    <p class="desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     <a href="product-list.html" class="view-details">view details</a>
+  </div>
+ </div>
+
+  <div class="product-card">
+    <img src="C:\Users\shah\OneDrive\Documents\9.png" alt="GoPro Camera">
+    <div class="product-info">
+    <h2>GoPro HERO6 4K Action Camera - Black</h2>
+    <p class="price">$998.00 <span class="old-price">$1128.00</span></p>
+    <p class="rating">⭐ 7.5 | 154 orders</p>
+    <p class="shipping">Free Shipping</p>
+    <p class="desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     <a href="product-list.html" class="view-details">view details</a>
+</div> 
+ </div> 
+ <div class="pagination-wrapper">
+  <div class="show-count">
+    Show 
+    <select>
+      <option>10</option>
+    </select>
+  </div>
+
+  <div class="pagination">
+    <a href="#" class="prev">&lt;</a>
+    <a href="#" class="page active">1</a>
+    <a href="#" class="page">2</a>
+    <a href="#" class="page">3</a>
+    <a href="#" class="next">&gt;</a>
+  </div>
+</div>
+ 
+    <!-- Right Content End -->
+</div>
+
+<!--footer-->
+<footer class="main-footer">
+  <div class="newsletter">
+    <h3>Subscribe on our newsletter</h3>
+    <p>Get daily updates and offers directly to your inbox</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <div class="footer-links">
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Find Store</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Partnership</h4>
+      <ul>
+        <li><a href="#">Affiliate</a></li>
+        <li><a href="#">Sellers</a></li>
+        <li><a href="#">Wholesale</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Payment</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+  <div class="footer-col">
+  <div class="user-links">
+    <h4>For Users</h4>
+    <ul>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">My Orders</a></li>
+    </ul>
+  </div>
+</div>
+  <div class="app-download">
+    <h4>Get Our App</h4>
+    <div class="store-buttons">
+      <a href="#"><img src="C:\Users\shah\Downloads\market-button.png" alt="App Store"></a>
+      <a href="#"><img src="C:\Users\shah\OneDrive\Pictures\market-button.png" alt="Google Play"></a>
+    </div>
+  </div>
+</div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2023 ecommerce</p>
+  </div>
+</footer>
+</div>
+</div>
+
+</body>
+</html>
